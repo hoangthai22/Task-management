@@ -1,0 +1,84 @@
+GET http://localhost:5000/v1/tasks
+Content-Type: application/json
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhvYW5ndGhhaSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjI4Njc2NDM1LCJleHAiOjE2Mjg2NzY0OTV9.U95n2goHigXdg9atQzH9Me3izxT5qiTvguf7ps6hnQk
+###
+
+POST http://localhost:5000/v1/user/refreshToken
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhvYW5ndGhhaSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjI4Njc2Mjg2LCJleHAiOjE2Mjg2Nzk4ODZ9.GFQiqjQmu-NZq_tLBpzMwLbaFRmw4x99YjTIgbpnRpY"
+}
+
+###
+POST http://localhost:5000/v1/user/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhvYW5ndGhhaSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjI4Njk1MTU3LCJleHAiOjE2Mjg2OTg3NTd9.75pzmMjpAdfJQNm6hqGOpFtS1ZhRQRvO_gt3TqkwA2o"
+}
+
+###
+
+GET  http://localhost:5000/v1/tasks/filter?q=java wi
+Content-Type: application/json
+
+
+###
+
+POST http://localhost:5000/v1/tasks
+Content-Type: application/json
+
+{
+    "title": "title 2",
+    "description": "test 2",
+    "status": 2
+}
+
+###
+PUT http://localhost:5000/v1/tasks/6112397d09a8fc8dafc756fb
+Content-Type: application/json
+
+{
+    "title":"Learn Python",
+    "description":"Learn python with my friends",
+    "status": 0,
+    "_destroy": true
+}
+
+
+###
+POST http://localhost:5000/v1/user/login
+Content-Type: application/json
+
+{
+    "username": "hoangthai",
+    "password": "12345"
+}
+###
+
+POST http://localhost:5000/v1/user
+Content-Type: application/json
+
+{
+    "username": "hoangthai",
+    "password": "123456"
+}
+###
+
+POST http://localhost:5000/v1/user/signup
+Content-Type: application/json
+
+{
+    "username": "anhthu",
+    "password": "123456"
+}
+
+
+###
+
+GET http://localhost:5000/v1/user/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhvYW5ndGhhaSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjI4Njk2MjMxLCJleHAiOjE2Mjg2OTk4MzF9.-tYETohjI2K0jWo-TbD5rF_xhYl8cvDru0_-Wm313A8
+Content-Type: application/json
+
+
+
